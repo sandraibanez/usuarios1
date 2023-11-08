@@ -109,6 +109,137 @@ header {
 	font-size: 16px;
   }
   
+
+  /* Estilos de la sección */
+
+.que_es_github {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #e8e7e7;
+	border: 1px solid #cccccc;
+  }
+  
+  /* Estilos del título */
+  
+  h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos del párrafo */
+  
+  p {
+	margin-bottom: 20px;
+  }
+  
+  /* Estilos del subtítulo */
+  
+  h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos de la lista */
+  
+  ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+  }
+  
+  li {
+	margin-bottom: 10px;
+  }
+  
+
+   /* Estilos de la sección */
+
+.gitflow {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+  }
+  
+  /* Estilos del título */
+  
+  h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos del párrafo */
+  
+  p {
+	margin-bottom: 20px;
+  }
+  
+  /* Estilos del subtítulo */
+  
+  h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos de la lista */
+  
+  ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+  }
+  
+  li {
+	margin-bottom: 10px;
+  }
+
+     /* Estilos de la sección */
+
+.porqueloutilizamos {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #e8e7e7;
+	border: 1px solid #cccccc;
+  }
+  
+  /* Estilos del título */
+  
+  h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos del párrafo */
+  
+  p {
+	margin-bottom: 20px;
+  }
+  
+  /* Estilos del subtítulo */
+  
+  h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  /* Estilos de la lista */
+  
+  ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+  }
+  
+  li {
+	margin-bottom: 10px;
+  }
+
 footer {
 	background-color: #000;
 	color: #fff;
