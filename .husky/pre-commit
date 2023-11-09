@@ -9,7 +9,6 @@ if [[ "$current_branch" == "hotfix/mejorasV_1_0" ]]; then
 
     if [[ ! $commit_msg == "A corregir por: "* ]]; then
     echo "El mensaje de commit debe contener la frase 'A corregir por: ...'"
-    echo "Abortando el commit."
     exit 1
     fi
 fi
