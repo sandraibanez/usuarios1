@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Comprobar que el mensaje de commit contiene la frase "A corregir por: ..."
-current_branch=$(git symbolic-ref-short HEAD)
+current_branch=$(git symbolic-ref --short HEAD)
 
 if [[ "$current_branch" == "hotfix/mejorasV_1_0" ]]; then
     commit_msg_file="$1"
@@ -9,7 +9,7 @@ if [[ "$current_branch" == "hotfix/mejorasV_1_0" ]]; then
 
     # commit_message=$(git log --oneline -1)
 
-    if [[ ! $commit_msg == "A corregir por: "* ]]; then
+    if [[ ! $commit_msg | grep -q "A corregir por: "* ]]; then
     echo "El mensaje de commit debe contener la frase 'A corregir por: ...'"
     echo "Abortando el commit."
     exit 1
