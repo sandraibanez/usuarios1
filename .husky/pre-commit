@@ -1,8 +1,8 @@
 #!/bin/sh
 #!/bin/sh
 
-# Crea el hook pre-commit
-npx husky install
+# # Crea el hook pre-commit
+# npx husky install
 
 # Configura el hook pre-commit
 cat <<EOF > .husky/pre-commit
