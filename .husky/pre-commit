@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Comprobar que el mensaje de commit contiene la frase "A corregir por: ..."
+
+commit_message=$(git log --oneline -1)
+
+if [[ ! $commit_message =~ "A corregir por: " ]]; then
+  echo "El mensaje de commit debe contener la frase 'A corregir por: ...'"
+  exit 1
+fi
