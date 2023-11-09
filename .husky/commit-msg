@@ -4,7 +4,7 @@ commit_msg=$(cat "${1}")
 hotfix_msg='A corregir por:'
 
 if git branch -a | grep "*" | grep "hotfix"; then
-    if [[ "$commit_msg" == "$hotfix_msg" ]]; then
+    if [[ "$commit_msg" == *"$hotfix_msg"* ]]; then
         exit 0
     else 
         echo "el mensaje de commit debe contener la frase "A corregir por:""
