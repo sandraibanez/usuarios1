@@ -61,15 +61,6 @@ height: 50px;
 
 }
 
-.home4{	
-
-
-	margin-top:15px;
-	margin-left: 100px;
-    box-shadow:#0c0c0c;
-	transform: translate(10px, -10px);
-}
-
 #primary_nav_wrap ul{
 	list-style:none;
 	position:relative;
@@ -104,10 +95,7 @@ height: 50px;
 	width: 200px;
 	transform: translate(-124px, -35px);
 }
-.titulo_home4{
-	width: 200px;
-	transform: translate(0px, 10px);
-}
+
 .home2{
 
 
@@ -121,11 +109,6 @@ height: 50px;
 }
 
 
-.titulo_home4{
-	width: 200px;
-	transform: translate(0px, 10px);
-}
-
 .titulo_home2{
 	width: 200px;
 	transform: translate(-450px, 10px);
@@ -136,6 +119,16 @@ height: 50px;
 	transform: translate(-124px, -35px);
 }
 .titulo_home3{
+	width: 200px;
+	transform: translate(-450px, 10px);
+}
+.home4{	
+	height: 60px;
+	width: 200px;
+	transform: translate(-124px, -35px);
+}
+
+.titulo_home4{
 	width: 200px;
 	transform: translate(-450px, 10px);
 }
