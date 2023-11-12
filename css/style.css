@@ -24,7 +24,46 @@ header {
 }
 
 
+
 #primary_nav_wrap{
+margin-top:15px;
+margin-left: 100px;
+  box-shadow:#0c0c0c;
+transform: translate(10px, -10px);
+}
+
+#primary_nav_wrap ul{
+list-style:none;
+position:relative;
+float:left;
+margin:0;
+padding:0;
+border-radius: 10px;
+}
+
+#primary_nav_wrap ul a{
+display:block;
+color:#333;
+text-decoration:none;
+font-weight:700;
+font-size:12px;
+line-height:32px;
+padding:0 15px;
+font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif	  
+}
+
+#primary_nav_wrap ul li{
+position:relative;
+float:left;
+margin:0;
+padding:0;
+height: 50px;
+
+}
+
+.home4{	
+
+
 	margin-top:15px;
 	margin-left: 100px;
     box-shadow:#0c0c0c;
@@ -59,7 +98,19 @@ header {
 	height: 50px;
 	
 }
+
 .home{
+	height: 60px;
+	width: 200px;
+	transform: translate(-124px, -35px);
+}
+.titulo_home4{
+	width: 200px;
+	transform: translate(0px, 10px);
+}
+.home2{
+
+
 	height: 60px;
 	width: 200px;
 	transform: translate(-124px, -35px);
@@ -68,6 +119,31 @@ header {
 .titulo_home{
 	transform: translate(-390px, 10px);
 }
+
+
+.titulo_home4{
+	width: 200px;
+	transform: translate(0px, 10px);
+}
+
+.titulo_home2{
+	width: 200px;
+	transform: translate(-450px, 10px);
+}
+.home3{
+	height: 60px;
+	width: 200px;
+	transform: translate(-124px, -35px);
+}
+.titulo_home3{
+	width: 200px;
+	transform: translate(-450px, 10px);
+}
+#primary_nav_wrap ul li.current-menu-item{
+	height: 50px;
+}
+
+
 
 .descripcion_curso {
 	width: 600px;
@@ -102,6 +178,9 @@ header {
 	font-weight: bold;
 	margin-bottom: 5px;
   }
+
+
+
   
   /* Estilos para el texto de los elementos de la lista */
   
@@ -254,3 +333,16 @@ footer {
 	font-size: 16px;
 	font-weight: bold;
   } 
+  .titulo-lista3 {
+    font-weight: bold;
+    color:#8c86db;
+    margin-bottom: 5px;
+    }
+    .texto-lista3 {
+    color:coral;
+    font-size: 16px;
+    }
+    #descripcion_curso3{
+    background-color: #D5F5E3;
+    }
+

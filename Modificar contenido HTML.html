@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>actividad_formulario</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <section id="menu_navegacion">
+            <nav id="primary_nav_wrap">
+                <ul>
+                    <li class="current-menu-item"><a href="index.html" style="background-color:#C3D1ED;" class="home"><h1 class="titulo_home">Home</h1></a></li>
+                    <li class="current-menu-item"><a href="Modificar contenido HTML.html" style="background-color:#C3D1ED;" class="home2"><h1 class="titulo_home2">Modificar contenido HTML</h1></a></li>
+                    <li class="current-menu-item"><a href="Modificar atributos HTML.html"  class="home3"><h1 class="titulo_home3">Modificar atributos HTML</h1></a></li>
+                    <li class="current-menu-item"><a href="Modificar estilos CSS.html" style="background-color:#C3D1ED;"  class="home4"><h1 class="titulo_home4">Modificar estilos CSS</h1></a></li>  
+                </ul>
+            </nav>
+        </section>
+        <section>
+
+           <section class="descripcion_curso" id="demo">
+            <p>
+                El curso de 2º DAW de Desarrollo de Aplicaciones Web es un curso muy completo que te prepara para trabajar como desarrollador web. En este curso aprenderás todo lo necesario para crear aplicaciones web, desde el diseño de la interfaz hasta el desarrollo del backend.
+            </p>
+            <ul>
+                <h3  class="titulo-lista">Las asignaturas se dibiden en cuatro bloques</h3>
+                <li>
+                   <p class="titulo-lista">Desarrollo web en entorno cliente: </p> 
+                    <p class="texto-lista">En este bloque aprenderás a crear la interfaz de tu aplicación web utilizando HTML, CSS y JavaScript, que son algunas de los lenguajes que aprenden en este curso.</p>
+                </li>
+                <li>
+                    <p class="titulo-lista">Desarrollo web en entorno servidor:</p>
+                    <p class="texto-lista">En este bloque aprenderás a desarrollar el backend de tu aplicación web utilizando PHP, Java o Python, que son algunas de los lenguajes que aprenden en este curso.</p>
+                </li>
+                <li>
+                    <p class="titulo-lista">Desplige de aplicaciones web:</p>
+                    <p class="texto-lista">En este bloque aprenderas a lanzanzar tus aplicaciones web con herramientas como github.</p>  
+                </li>
+                <li>
+                    <p class="titulo-lista">Diseño de aplicaciones web:</p>
+                    <p class="texto-lista"> En este bloque aprenderas a deseñar el diseño de la pagina web con html y css.</p>
+                </li>
+            </ul>
+        </section>
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "<section class=descripcion_curso2><p>Este código HTML onclick=document.getElementById(demo).innerHTML crea un botón con el texto Click Me!. Cuando haces clic en el botón, se ejecuta el código JavaScript que está dentro de la etiqueta onclick.</p><ul><h3 class=titulo-lista2>El código JavaScript hace dos cosas:</h3><li><p class=titulo-lista2>Obtiene el elemento HTML con el identificador demo. </p> <p class=texto-lista>Cambia el contenido del elemento HTML demo a un nuevo contenido HTML que incluye la clase descripcion_curso2.</p></li></ul></section>"'>Click Me!</button>
+        </section>
+        <footer >
+            Desarrollo de Aplicaciones Web
+        </footer>
+    </body>
+</html>

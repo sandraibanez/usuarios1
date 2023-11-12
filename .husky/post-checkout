@@ -1,0 +1,8 @@
+#!/bin/bash
+ps | awk '{
+    print " |__/,|   (`  ";
+    print " |_ _  |.--.) ) ";
+    print " ( T   )     /  ";
+    print "(((^_(((/(((_/ ";
+    exit
+}'
