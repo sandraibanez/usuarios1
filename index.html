@@ -98,6 +98,113 @@
             <li><b>Mejorar la calidad del código:</b> Git Flow nos ayuda a realizar pruebas y a controlar los cambios que hacemos en el código, lo que nos ayuda a mejorar la calidad del código.</li>
         </ul>
     </section>
+    <section class="descripcion_curso">
+        <p><b>Creacion de las ramas para hacer el flujo de trabajo de git flow:</b></p>
+      <ul>
+        <h3>Usuario 1</h3>
+          <li>
+              <p class="titulo-lista">Con el comando git branch:</p> 
+              <p class="texto-lista">Se creara una nueva rama llamada <b>Master</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+              <p class="texto-lista">Se creara una nueva rama llamada <b>Hotfix</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+          </li>
+          <h3>Usuario 2</h3>
+          <li> 
+              <p class="titulo-lista">Con el comando git branch:</p>
+              <p class="texto-lista">Se creara una nueva rama llamada <b>feature/contenidoHTML</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+              <p class="texto-lista">Se creara una nueva rama llamada <b>feature/atributosHTML</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+          </li>
+           <h3>Usuario 3</h3>
+           <li> 
+            <p class="titulo-lista">Con el comando git branch:</p>
+            <p class="texto-lista">Se creara una nueva rama llamada <b>feature/estilosCSS</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+            <p class="texto-lista">Se creara una nueva rama llamada <b>release</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+            <p class="texto-lista">Se creara una nueva rama llamada <b>develop</b>, se le hace un git add para añadir los archivos nuevos, se le realiza unnuevo commit y por ultimo se le realiza un git push origin "nombre de la nueva rama"</p>
+           </li>
+      </ul>
+    </section>
+    <section class="que_es_github">
+        <h2>¿Como pasar los cambios de un repositorio de github a otro del mismo github?</h2>
+       
+        <h3>Mediante el comando git remote add "nombre" "url del repositorio que se quiere mandar los cambios"</h3>
+        <ul>
+            <p>por ejemplo si se quiere pasar los cambios del usuario 2 al usuario 3 se deven seguir los siguientes pasos:</p>
+            <li>
+                <b>Usuario 2</b> Mediante el comando git remote add "usuario3/release" "url del repositorio que se quiere mandar los cambios" y luego se hace un git push usuario3/release "nombre de la rama"
+            </li>
+            <li>
+                <b>Usuario 3</b> en la rama develop se hace un git pull origin feature/contenidoHTML, se hace un merge si hace falta y cuando ya estan solucionado los errores se hace un git push origin develop
+            </li>
+        </ul>
+    </section>
+    <section class="gitflow">
+        <h2>Creacion de los hooks</h2>
+        <ul>
+            <h3>Usuario 1</h3>
+            <p><b>Primer hook:</b></p>
+            <li>
+                Nos aseguramos que estamos en la rama del hotfix y una vez que estamos en la rama de hotfix instalamos la libreria de npm install husky --save-dev
+            </li>
+            <li>
+                Tenemos que confirmar que en el pakage.json tenga esta estructura:
+                <img src="./img/hook11.PNG" alt="imagen"/>
+            </li>
+            <li>
+                se crea esta estructura en el proyecto:
+                <img src="./img/hook21.PNG" alt="imagen"/>
+            </li>
+            <li> 
+                en el archivo de pre-commit se escribe el codigo del hook:
+                <img src="./img/hook31.PNG" alt="imagen"/>
+            </li>
+            <li>
+                lugo ya se hace un git add y git commit y funciona:
+
+                <img src="./img/hook41.PNG" alt="imagen"/>
+            </li>
+           <p><b>Segundo hook:</b></p>
+            <li>
+                se crea la estructura del post-checkout:
+                <br>
+                <img src="./img/hook51.PNG" alt="imagen"/>
+            </li>
+            <li>
+                se añade el codigo para cuando se cambie de rama se pinte en este caso el gato:
+                <img src="./img/hook61.PNG" alt="imagen"/>
+            </li>
+            <li>
+                el resultado al cambiar de rama:
+                <img src="./img/hook71.PNG" alt="imagen"/>
+            </li>
+        </ul>
+        <ul>
+            <h3>Usuario 2</h3>
+            <li>
+                primero hay que instalar esto: npm install --save-dev eslint-plugin-html
+            </li>
+            <li>
+                Después hay que hacer este paso para que nos cree la carpeta:
+                <img src="./img/hook12.PNG" alt="imagen"/>
+            </li>
+            <li>
+                se le añade los plugins:
+                <br>
+                <img src="./img/hook22.PNG" alt="imagen"/>
+            </li>
+            <li>
+                Agrega un script en el archivo package.json para ejecutar ESLint antes de cada commit. Puedes hacer esto agregando el siguiente fragmento en el objeto "scripts" de tu package.json:
+                <img src="./img/hook32.PNG" alt="imagen"/>
+            </li>
+            <li>
+                hay que poner esto en el html:
+                <br>
+                <img src="./img/hook42.PNG" alt="imagen"/>
+            </li>
+            <li>
+                Si estás trabajando en un proyecto donde la convención de fin de línea es importante es posible que desees asegurarte de que todos estén usando la misma convención. Puedes configurar la propiedad core.autocrlf de Git para manejar automáticamente las conversiones entre LF y CRLF: 
+                <img src="./img/hook52.PNG" alt="imagen"/>
+            </li>
+        </ul>
+    </section>
     <footer >
         Desarrollo de Aplicaciones Web
     </footer>
